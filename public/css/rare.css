@@ -1,0 +1,26 @@
+.html, body {
+    background-image: linear-gradient(45deg, #8cda92, #a6d9a6);
+}
+
+.button {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, #8cda92, #a6d9a6);
+    border: 2px solid rgb(46, 95, 46);
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-image: linear-gradient(45deg, #75c57c, #8ac48a);
+  border: 2px solid rgb(30, 70, 30);
+  transition-duration: 0.4s;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:active {
+    transition-duration: 0.05s;
+  transform: translateY(2px);
+}

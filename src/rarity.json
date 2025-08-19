@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Common",
+        "weight": 1,
+        "description": "Common website",
+        "css": "common.css"
+    },
+    {
+        "name": "Rare",
+        "weight": 2,
+        "description": "Rare website",
+        "css": "rare.css"
+    },
+    {
+        "name": "Epic",
+        "weight": 3,
+        "description": "Epic website",
+        "css": "epic.css"
+    },
+    {
+        "name": "Legendary",
+        "weight": 4,
+        "description": "Legendary website",
+        "css": "legendary.css"
+    },
+    {
+        "name": "Rainbow",
+        "weight": 5,
+        "description": "Rainbow website",
+        "css": "rainbow.css"
+    }
+]

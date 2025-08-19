@@ -1,0 +1,26 @@
+.html, body {
+    background-image: linear-gradient(45deg, rgb(226, 73, 73), rgb(231, 169, 52), rgb(230, 230, 57), rgb(71, 224, 71), rgb(77, 77, 224), rgb(165, 78, 228), violet, rgb(235, 72, 72));
+}
+
+.button {
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(45deg, rgb(226, 73, 73), rgb(231, 169, 52), rgb(230, 230, 57), rgb(71, 224, 71), rgb(77, 77, 224), rgb(165, 78, 228), violet, rgb(235, 72, 72));
+    border: 2px solid #000000;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-image: linear-gradient(45deg, rgb(197, 52, 52), rgb(207, 147, 36), rgb(206, 206, 37), rgb(52, 204, 52), rgb(50, 50, 199), rgb(138, 55, 197), rgb(206, 94, 206), rgb(204, 50, 50));
+  border: 2px solid #000000;
+  transition-duration: 0.4s;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:active {
+    transition-duration: 0.05s;
+  transform: translateY(2px);
+}
