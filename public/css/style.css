@@ -10,22 +10,107 @@ html, body {
     font-family: Verdana;
     font-size: 20px;
 }
-#center {
+
+#title {
+    font-size: 48px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 15vh;
+    width: 100vw;
+}
+
+.center_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 80vw;
+    padding-left: 20vw;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 20vw;
+}
+
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 70vh;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    height: 15vh;
+}
+
+.slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#slides_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 80vw;
+    overflow: hidden;
+}
+
+#slides_container * {
+  font-size: 38px;
+  border: 1px solid #000000;
+  padding: 14px 40px;
+  margin: 0 10px;
+}
+
+#precedent, #next {
+  font-size: 48px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#precedent {
+  width:8vw;
+  margin-left: 2vw;
+}
+
+#next {
+  width:8vw;
+  margin-right: 2vw;
 }
 
 #rolling {
+  font-size: 48px;
   border: 1px solid #000000;
   padding: 14px 40px;
 }
 
-#result {
-  border: 1px solid #000000;
-  padding: 14px 40px;
+#discord_button {
+  height: 100%;
 }
 
 .animate-roll {

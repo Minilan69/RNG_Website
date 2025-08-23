@@ -31,7 +31,28 @@ function roll() {
         document.getElementById('rolling').classList.add(data.result.name.toLowerCase());
         animateroll();
         document.getElementById('css').setAttribute('href', 'css/'+ data.result.css);
-    }, 5000);
+    }, 4500);
   })
     .catch(error => console.error('Error:', error))
 }
+
+async function discordButton() {
+  const response = await fetch('/me');
+  const data = await response.json();
+  const button = document.getElementById('discord_button');
+  console.log('Fetched /me:', data);
+  if (data.loggedIn) {
+    button.innerText = 'Logout of ' + data.username;
+    button.onclick = async () => {
+      await fetch('/logout', { method: 'POST' });
+      discordButton();
+    }
+  } else {
+    button.innerText = 'Login with Discord';
+    button.onclick = () => {
+      window.location.href = '/login';
+  }
+}
+}
+
+discordButton();

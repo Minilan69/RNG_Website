@@ -7,25 +7,25 @@
     },
     {
         "name": "Rare",
-        "weight": 5,
+        "weight": 7,
         "description": "Rare website",
         "css": "rare.css"
     },
     {
         "name": "Epic",
-        "weight": 15,
+        "weight": 30,
         "description": "Epic website",
         "css": "epic.css"
     },
     {
         "name": "Legendary",
-        "weight": 25,
+        "weight": 100,
         "description": "Legendary website",
         "css": "legendary.css"
     },
     {
         "name": "Rainbow",
-        "weight": 50,
+        "weight": 300,
         "description": "Rainbow website",
         "css": "rainbow.css"
     }

@@ -3,14 +3,37 @@
     <head>
         <link rel="stylesheet" href="css/style.css">
         <link id="css" rel="stylesheet" href="css/none.css">
+        <title>RNG Website</title>
+        <link rel="icon" type="image/x-icon" href="/assets/dice.png">
     </head>
     <body>
-        <div id="center" class="center">
+        <div class="top">
+            <div class="center_top">
+                <h1 id="title">RNG Website</h1>
+            </div>
+            <div id="right" class="right">
+                <button id="discord_button" class="button"></button>
+            </div>
+        </div>
+        <div class="center">
             <div id="rolling_container">
                 <div id="rolling">None</div>
             </div>
             <div id="button_container">
                 <button id="roll_button" class="button" onclick="roll()">Roll</button>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="slider_container">
+                <div id="precedent" onclick="changeslide(-1)">&#10094;</div>
+                <div id="slides_container">
+                    <div id="slide1" class="common">Common</div>
+                    <div id="slide2" class="rare">Rare</div>
+                    <div id="slide3" class="epic">Epic</div>
+                    <div id="slide4" class="legendary">Legendary</div>
+                    <div id="slide5" class="rainbow">Rainbow</div>
+                </div>
+                <div id="next" onclick="changeslide(1)">&#10095;</div>
             </div>
         </div>
     </body>
