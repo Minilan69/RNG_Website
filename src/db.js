@@ -1,3 +1,9 @@
+const fs = require('fs');
+const path = require('path');
+
+const dbPath = 'src/db/user.db';
+fs.mkdirSync(path.dirname(dbPath), { recursive: true });
+
 const Database = require('better-sqlite3')
 const db = new Database('src/db/user.db')
 
